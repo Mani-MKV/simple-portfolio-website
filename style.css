@@ -50,14 +50,17 @@ body{
 .skills{
     text-align: center;
 }
+.skills span{
+    color: crimson;
+}
 .skills h1{
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
 .skills img{
     padding: 10px;
     width: 8vw;
     height: 8vw;
-    background-color: rgb(173, 216, 230,0.3);
+    background-color: rgba(118, 201, 229, 0.3);
     border-radius: 50%;
     margin: 25px;
     transition: all 0.2s linear;
@@ -72,10 +75,27 @@ body{
     }
     .container{
         display: block;
+        padding: 10px;
+    }
+    .aboutme,.education{
+        padding: 5px;
+    }
+    .container .aboutme h1{
+        text-align: center;
+    }
+    .container .education h1{
+        text-align: center;
+    }
+    .skills h1{
+        font-size: 6vw;
     }
     .skills img{
-        margin: 10px;
-        width: 12vw;
-        height: 12vw;
+        margin: 15px;
+        width: 13vw;
+        height: 13vw;
     }
+    .skills h4{
+        padding: 5px;
+    }
+    
 }
