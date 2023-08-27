@@ -35,6 +35,12 @@ body{
     flex: 50%;
     padding: 25px;
 }
+.aboutme i{
+    animation: turn 4s linear infinite;
+}
+.aboutme ul{
+    list-style-type: square;
+}
 .aboutme ul li{
     padding-top: 10px;
     line-height: 150%;
@@ -43,18 +49,27 @@ body{
     flex: 50%;
     padding: 25px;
 }
+.education h1 i{
+    animation: turn 4s linear infinite;
+}
 .education .course{
     padding-left: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 .skills{
     text-align: center;
+}
+.skills i{
+    animation: turn 4s linear infinite;
 }
 .skills span{
     color: crimson;
 }
 .skills h1{
     font-size: 4.5vw;
+}
+.skills .lis{
+    margin: 2% 15%;
 }
 .skills img{
     padding: 10px;
@@ -63,11 +78,80 @@ body{
     background-color: rgba(118, 201, 229, 0.3);
     border-radius: 50%;
     margin: 25px;
-    transition: all 0.2s linear;
+    transition: all 0.5s linear;
 }
 .skills img:hover{
     transform: scale(1.1,1.1);
+    transform: rotateZ(360deg);
     box-shadow: 1px 1px 8px black;
+}
+.connectme{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    text-align: center;
+}
+.connectme .head{
+    text-align: center;
+}
+.connectme .head span{
+    color: crimson;
+}
+.connectme .content{
+    display: flex;
+    justify-content: center;
+}
+.connectme .head i{
+    animation: turn 4s linear infinite;
+}
+.connectme .content a{
+    color: black;
+    display: inherit;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 10px;
+}
+.connectme .content a:hover{
+    box-shadow: 2px 2px 8px black;
+}
+.connectme img{
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.contactme{
+    margin-bottom: 5%;
+}
+.contactme .head{
+    text-align: center;
+}
+.contactme .head i{
+    animation: turn 4s linear infinite;
+}
+.contactme .content{
+    display: flex;
+    justify-content: center;
+}
+.contactme .content p{
+    margin-right: 5%;
+}
+.contactme .content p a{
+    text-decoration: none;
+    color: black;
+}
+.copyright{
+    text-align: center;
+    opacity: 0.5;
+    font-size: small;
+}
+.copyright p{
+    padding: 8px;
+}
+@keyframes turn {
+    100%{
+        transform: rotateY(360deg);
+    }
 }
 @media screen and (max-width:600px) {
     .text{
@@ -86,8 +170,14 @@ body{
     .container .education h1{
         text-align: center;
     }
+    .education .course{
+        padding-bottom: 2px;
+    }
     .skills h1{
         font-size: 6vw;
+    }
+    .skills .lis{
+        margin: 2% 6%;
     }
     .skills img{
         margin: 15px;
@@ -97,5 +187,19 @@ body{
     .skills h4{
         padding: 5px;
     }
-    
+    .connectme .head{
+        font-size: 3vw;
+    }
+    .connectme img{
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+    .contactme .head{
+        font-size: 3vw;
+    }
+    .contactme .content{
+        display: block;
+        text-align: center;
+    }
 }
